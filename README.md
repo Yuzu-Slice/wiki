@@ -1,6 +1,6 @@
 # Yuzu-Slice Wiki
 Funkin' CrewによるFNF Modding Documentationの日本語訳。追加の便利な追加情報も含まれる予定です。
-#### このWikiはWIP(制作/翻訳途中)です！気軽にPull Requestをして追記したり、本家の情報の翻訳に貢献いただけます！
+#### このWikiはWIP(制作/翻訳途中)です！気軽にPull Requestをして追記したり、本家の情報の翻訳に貢献をお願いします！
 
 ## 目次
 
