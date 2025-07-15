@@ -1,6 +1,7 @@
-# Loading the Mod In-Game
+# Modをゲーム内に読み込む
 
-Now that you have a metadata file, you can start the game! Pro tip, if you run the game from the command line, you can see lots of useful debug messages, like these messages that indicate your mod has loaded!
+メタデータファイルが完成したら、ゲームを開始できます！
+コマンドラインからゲームを実行すると、Modがロードされたことを示すこれらのメッセージなど、役立つデバッグメッセージが多数表示されます。
 
 ```shell
 source/funkin/modding/PolymodHandler.hx:316: Found 5 mods when scanning.
@@ -12,4 +13,8 @@ source/funkin/modding/PolymodErrorHandler.hx:79: [INFO-] LOADING MOD - Done load
 source/funkin/modding/PolymodHandler.hx:169: Mod loading complete. We loaded 5 / 5 mods.
 ```
 
-Neat! But right now, your mod doesn't do anything.
+やったね！
+.....しかし、現時点では、あなたのModは何も機能をしません。何も入れてないのですから。
+
+----
+#### [次のページへ](01-03-asset-replacement-and-additions.md)

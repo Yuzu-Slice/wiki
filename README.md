@@ -6,12 +6,12 @@ Funkin' CrewによるFNF Modding Documentationの日本語訳。追加の便利�
 
 ### はじめに
 - [基礎](docs/01-fundamentals/01-00-fundamentals.md)
-	- [The Metadata File](docs/01-fundamentals/01-01-the-metadata-file.md)
-	- [Loading the Mod In-Game](docs/01-fundamentals/01-02-loading-the-mod-in-game.md)
-	- [Asset Replacement and Additons](docs/01-fundamentals/01-03-asset-replacement-and-additions.md)
-	- [Mod Load Order](docs/01-fundamentals/01-04-mod-load-order.md)
-	- [Hot Reloading](docs/01-fundamentals/01-05-hot-reloading.md)
-	- [Chapter Conclusion](docs/01-fundamentals/01-06-chapter-conclusion.md)
+	- [メタデータファイル](docs/01-fundamentals/01-01-the-metadata-file.md)
+	- [Modをゲーム内に読み込む](docs/01-fundamentals/01-02-loading-the-mod-in-game.md)
+	- [アセットの置き換えと追加](docs/01-fundamentals/01-03-asset-replacement-and-additions.md)
+	- [Modの読み込み順序](docs/01-fundamentals/01-04-mod-load-order.md)
+	- [ホットリロード](docs/01-fundamentals/01-05-hot-reloading.md)
+	- [章のまとめ](docs/01-fundamentals/01-06-chapter-conclusion.md)
 
 ### Custom Assets
 - [Custom Songs and Custom Levels](docs/02-custom-songs-and-custom-levels/02-00-custom-songs-and-custom-levels.md)

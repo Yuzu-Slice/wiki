@@ -1,16 +1,17 @@
-# The Metadata File
+# メタデータファイル
 
-To start, create a new folder within your `mods` folder. This is where your mod's assets and scripts will live. Next, create a new text file, and change its name to `_polymod_meta.json`. Make sure you didn't accidentally name it `_polymod_meta.json.txt`!
+はじめに、`mods`フォルダの中に新しいフォルダを作りましょう。このフォルダがあなたのModの素材やスクリプトが入る場所になります。 次に、新しい新しいテキストファイルを作り、名前を`_polymod_meta.json`に変更しましょう。`_polymod_meta.json.txt`のように間違えないように注意！
 
-Inside this file, we will put the information the game needs in order to learn about your mod. I recommend doing this with a program like [Visual Studio Code](https://code.visualstudio.com/), it will correct you if you accidentally misplace a comma or something.
+このファイルには、ゲームがModを認識するために必要な情報を入力します。[Visual Studio Code](https://code.visualstudio.com/)などのプログラムを使うことをお勧めします。カンマなどを間違えても修正してくれます。
 
 ```json
 {
-  "title": "Intro Mod",
-  "description": "An introductory mod.",
+  "title": "Mod名",
+  "description": "説明用のMod",
   "contributors": [
     {
-      "name": "EliteMasterEric"
+      "name": "作者名",
+      "role": "リーダー"
     }
   ],
   "dependencies": {
@@ -19,33 +20,34 @@ Inside this file, we will put the information the game needs in order to learn a
   "optionalDependencies": {
     "modB": "1.3.2"
   },
-  "api_version": "0.6.3",
+  "api_version": "0.7.0",
   "mod_version": "1.0.0",
   "license": "Apache-2.0"
 }
 ```
 
-`_polymod_meta.json` has the following fields:
+`_polymod_meta.json` には以下の設定できる項目があります。
 
-- `title`: A readable name for the mod.
-- `description`: A readable description for the mod.
-- `contributors`: A list of Contributor objects.
-- `homepage`: A URL where users can learn more about your mod.
-- `dependencies`: A map of mod IDs which are mandatory dependencies, along with their version numbers.
-  - These are the mods which must also be loaded in order for this mod to load.
-  - If the mod is not included, it will fail.
-  - The mod list will be reordered such that dependencies load first.
-- `optionalDependencies`: A map of mod IDs which are optional dependencies, along with their version numbers.
-  - These mods do not necessarily need to be installed for this mod to load, but they will still force the mod list to be reordered so that the dependencies load before this mod.
-- `api_version`: A version number used to determine if mods are compatible with your copy of Funkin'. Change this to the version number for Friday Night Funkin' that you want to support, preferably the latest one (`0.6.3` at time of writing.).
-- `mod_version`: A version number specifically for your mod. Choose any version or leave it at `1.0.0`.
-- `license`: The license your mod is distributed under. [Pick one from here](https://opensource.org/licenses) or just leave it as `Apache-2.0`.
+- `title`:Modのわかりやすい名前。
+- `description`:Modのわかりやすい説明。
+- `contributors`: 作者の役職と名前のリスト。
+- `homepage`: ユーザーがMODの詳細を確認できる URL。
+- `dependencies`: 必須の依存関係であるModID とそのバージョン番号のマップ。
+  - これらのModは、このModをロードするために同時にロードする必要があります。
+  - このModが含まれていない場合、ロードは失敗します。
+- `optionalDependencies`: 完全に必要でないオプションの依存関係であるModのIdとそのバージョン番号のマップ。
+  - これらのModは、このModをロードするために必ずしもインストールする必要はありませんが、依存関係がこのModよりも先にロードされるように、MOD リストが並べ替えられます。
+- `api_version`: MODがFunkin'と互換性があるかどうかを判断するために使用されるバージョン番号です。サポートしたいFriday Night Funkin'のバージョン番号に変更してください。最新バージョン（執筆時点では`0.7.0`）が望ましいです。
+- `mod_version`: MOD固有のバージョン番号です。任意のバージョンを選択するか、`1.0.0`のままにしてください。
+- `license`: MODの配布ライセンスです。[こちらから選択](https://opensource.org/licenses)するか、FNF本家に倣って`Apache-2.0`のままにしてください。
 
-A Contributor has the following fields:
+contributorsの中身には以下のフィールドを挿入できます。
 
-- `name`: The contributor's name.
-- `role`: *(optional)* The role the contributor played, for example "Artist" or "Programmer"
-- `email`: *(optional)* A contact email
-- `url`: *(optional)* A homepage URL
+- `name`: 貢献者の名前。
+- `role`: *(任意)* 貢献者が担った役割（例:「アーティスト」または「プログラマー」など）
+- `email`: *(任意)* 連絡先メールアドレス
+- `url`: *(任意)* ホームページURL
+----
+これらの項目の多くは、ユーザーがModを整理できるようになる、今後実装されるModメニューによって使用されることを目的としています。
 
-Many of these fields are intended to be used in the future by an upcoming Mod Menu interface, which will allow users to organize their mods.
+#### [次のページへ](01-02-loading-the-mod-in-game.md)

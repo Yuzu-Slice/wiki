@@ -1,9 +1,11 @@
-# Hot Reloading
+# ホットリロード
 
-While developing your mod, you may find it inconvenient to make a change, open the game, encounter an error or visual issue, have to close the game, make another change, then open the game again and start the process over and over in order to achieve the desired results for your custom content.
+MODを開発している最中、変更を加えてゲームを起動し、エラーや表示上の問題が発生し、ゲームを終了して別の変更を加え、再びゲームを起動するというプロセスを何度も繰り返すのは面倒です。
 
-Thankfully, there is a better way! **Press F5 to force the game to dump its cache and reload all game data from disk,** then restart the current state with the appropriate changes applied. This lets you, for example:
+しかし、**F5**キーを押してゲームのキャッシュを強制的にダンプし、ディスクからすべてのゲームデータをリロードすることができます。これにより、例えば次のようなことが可能になります。
+- ステージの画像の位置を調整したり、新しい画像を追加したりした後、すぐにリロードしてゲーム内で確認する
+- キャラクターのアニメーションオフセットを変更し、すぐに動作を確認する
+- エラーの起きたスクリプトを修正して、リロードすることでゲームを終了せずにテストを続行する
 
-- Tweak the positions of stage props, or add new ones, then immediately reload to see them in game.
-- Modify the animation offsets for a character and quickly ensure they work.
-- Modify a script to resolve an exception and reload to continue testing without closing the game.
+----
+#### [次のページへ](01-06-chapter-conclusion.md)

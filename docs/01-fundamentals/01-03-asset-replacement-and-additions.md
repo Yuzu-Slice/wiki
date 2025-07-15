@@ -1,13 +1,12 @@
-# Asset Replacement and Additons
+# アセットの置き換えと追加
 
-## Asset Replacement
+## アセットの置き換え
 
-The key thing that Polymod allows you to do is to replace assets. This is done by adding those files to your mods folder in the same location as they would go.
+modシステムで最も重要な機能は、アセットの置き換えです。これは、アセットファイルをmodのフォルダ内の本来の場所と同じ場所に追加することで実現します。
 
-For example, you can replace Girlfriend's sprites by placing your new sprites in the same location as they are in the `assets` folder, which would be `shared/images/characters/GF_assets.png`.
+例えば、ガールフレンドのスプライトを置き換えるには、新しいスプライトを `assets` フォルダ内の元の場所、つまり `shared/images/characters/GF_assets.png` に配置します。
 
-In other words, structure your mod like so:
-
+図に表すと....
 ```
 -assets
 -manifest
@@ -22,11 +21,14 @@ In other words, structure your mod like so:
    |-_polymod_meta.json
 -Funkin.exe
 ```
+次のようにmodを構成するということです。
 
-When the game goes to load a character's sprites, it will make a request internally to retrieve the `assets/shared/images/characters/GF_assets.png` file to use for the texture (and the corresponding `XML` to split the image into individual frames). When it does, Polymod intercepts that request and checks if there is a file of that name among the loaded mods, and if so, it will use that instead.
+ゲームがキャラクターのスプライトをロードする際、テクスチャに使用する `assets/shared/images/characters/GF_assets.png` ファイル（および画像を個々のフレームに分割するための対応する `.xml` ファイル）を取得するリクエストが内部的で発行されます。この際ゲームはそのリクエストを一時中断し、ロード済みの mod の中にその名前のファイルが存在するかどうかを確認します。存在する場合は、代わりにそのファイルを使用します。
 
-## Asset Additions
+## アセットの追加
 
-Polymod also allows you to add new files to the game. This is notable, as trying to place new files into the `assets` directory doesn't work, the game won't recognize those files.
+前述のようにアセットを置き換えるだけではなく、ゲームに新しいファイルを追加することもできます。
+これらのアセットを使用するには、ゲームにロードするように指示する必要がありますが、指定されたフォルダ内のすべてのファイルをロードする関数もすでに多数用意されています。（ソングレジストリ、キャラクターレジストリ、ステージレジストリなど）これらについては後ほど詳しく説明します。
 
-The game still needs to get told to load those assets for them to get used, but there are many functions which load all the files in a given folder (such as the Song Registry, the Character Registry, the Stage Registry, etc). We'll look more into those later.
+----
+#### [次のページへ](01-04-mod-load-order.md)

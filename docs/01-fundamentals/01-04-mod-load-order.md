@@ -1,7 +1,10 @@
-# Mod Load Order
+# Modの読み込み順序
 
-You may wonder what happens in the case where multiple mods provide a given file.
+複数のmodが特定のファイルを提供している場合、どうなるのか疑問に思うかもしれません。
 
-The answer is simple; mod order matters. If you have two mods installed which replace a particular asset, the mod which loads last will get precedence over mods that get loaded earlier, similar to Minecraft's resource pack system. This is evaluated on a per-file basis, so if Mod A replaces Pico and GF and Mod B replaces only GF, and Mod B is loaded after Mod A, you'll see the Pico from Mod A and the Girlfriend from Mod B.
+答えは、modの順序が重要になります。特定のアセットを置き換えるmodを2つインストールしている場合、Minecraftのリソースパックのように、最後に読み込まれたmodが先に読み込まれたmodよりも優先されます。これはファイルごとに評価されます。つまり、mod AがPicoとGFを置き換え、mod BがGFのみを置き換え、mod Bがmod Aの後に読み込まれた場合、mod AのPicoとmod BのGirlfriendが表示されます。
 
-In the current version of Friday Night Funkin', there is no accessible means of altering mod load order. Mods will load in alphabetical order by default, with dependencies being loaded first.
+現在のバージョンのFNFでは、modの読み込み順序を変更するアクセス可能な手段はありません。modはデフォルトでアルファベット順に読み込まれ、依存関係のあるmodが最初に読み込まれます。
+
+----
+#### [次のページへ](01-05-hot-reloading.md)
