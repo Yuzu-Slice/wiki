@@ -1,5 +1,5 @@
-# Creating a Friday Night Funkin' Mod - Fundamentals
+# Yuzu-Slice Wiki - 基礎
 
-This guide will walk you through the process of creating a functioning, fully compatible Friday Night Funkin' mod, using the game's official systems for loading custom content and scripts. Once your mod is complete, you will be able to place it in the `mods` folder in your game install and use its content in-game without overriding the base game content and still maintain compatibility with other mods.
+このガイドでは、ゲームの組み込みのシステムを使用して独自のアセットを読み込み、完全に互換性のmodを作成する手順を詳しく説明します。modが完成したら、ゲームインストールディレクトリの「mods」フォルダに配置し、ゲーム内でそのコンテンツを使用することができます。ベースゲームのコンテンツを上書きすることなく、他のmodとの互換性も維持できます。
 
-This chapter in particular goes through a lot of core concepts of modding in Funkin' that will get used in other guides, so be sure to read through it carefully.
+**特にこの章では、他のガイドでも使用されるFunkin'のmod作成におけるコアとなる概念について詳しく説明しているので、よく読んでください。**
